@@ -73,3 +73,28 @@ body{
   content: 'SECONDS';
 }
 
+@media(max-width:960px){
+  .container{
+    width:500px;
+  } 
+}
+@media(max-width:670px){
+  .container{
+    width:300px;
+  }
+  .clock span{
+    font-size:40px;
+    padding:14px;
+    font-weight: bolder;
+  }
+  #hrs::after{
+    content: 'HR';
+  }
+  
+#min::after{
+  content: 'MIN';
+}
+#sec::after{
+  content: 'SEC';
+}
+}
