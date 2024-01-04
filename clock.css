@@ -5,6 +5,7 @@ body{
 .border{
   width:100%;
   min-height: 100vh;
+  border:2px solid;
   background: linear-gradient(45deg, purple, black);
 }
 .container{
@@ -97,4 +98,48 @@ body{
 #sec::after{
   content: 'SEC';
 }
+}
+
+.click-border{
+  background-color: rgb(192, 185, 185);
+  height:100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.click-container{
+  border: 2px solid;
+  display: flex;
+  width: 220px;
+  height: 150px;
+  align-items: center;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 4px 6px 6px rgba(0,0,0,0.6);
+  cursor: pointer;
+  color:black;
+  text-decoration: none;
+  
+}
+.click-container:hover{
+  color:rgb(204, 0, 0);
+  border:3px solid ;
+  border-radius: 18px;
+  transition-duration: 0.5s;
+}
+.click-container:active{
+  margin-left:4px;
+  margin-top:4px;
+  transition-duration: 0.1;
+  box-shadow: none;
+}
+.click-image{
+  width: 100px;
+}
+.click-label{
+  font-size: 40px;
+  font-weight: bolder;
+  font-family: cursive;
+  
 }
